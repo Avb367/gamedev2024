@@ -1,1 +1,29 @@
-webcam thing
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcam Photo Capture</title>
+    <style>
+        .camera {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #canvas {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="camera">
+        <video id="video" width="640" height="480" autoplay></video>
+        <button id="startbutton">Take photo</button>
+        <canvas id="canvas" width="640" height="480"></canvas>
+        <div class="output">
+            <img id="photo" alt="The screen capture will appear in this box.">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
