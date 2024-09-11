@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webcam Example</title>
+    <title>Webcam Photo Capture</title>
+    <style>
+        #takePicture {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <h1>Webcam Feed</h1>
+    <h1>Webcam Photo Capture</h1>
     <video id="video" width="640" height="480" autoplay></video>
+    <button id="takePicture">Take Picture</button>
+    <canvas id="canvas" width="640" height="480" style="display:none;"></canvas>
+    <img id="photo" alt="Your photo will appear here">
+    
     <script src="script.js"></script>
 </body>
 </html>
