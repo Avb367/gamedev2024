@@ -1,0 +1,2 @@
+<input type=button value="Add and fix" onclick="{ myTotal = document.getElementById('myIn01') .value = document.getElementById('myIn02) .value document.getElementById (myDiv01') .innerHTML = 'Your answer is ' + myTotal}"> 
+<div id="myDiv01">...</div>
