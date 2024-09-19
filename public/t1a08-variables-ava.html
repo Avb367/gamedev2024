@@ -3,10 +3,12 @@ W3Schools link to variables <a href=https://www.w3schools.com/js/js_variables.as
 Input 1:<input type=text id="myIn01" value="5"><br>
 Input 2:<input type=text id="myIn02" value="7"><br>
 Input 3:<input type=text id="myIn03" value="4"><br> 
+Input 4:<input type=text id="myIn04" value="2"><br> 
 <div id="myDiv01">...</div>
 <input type=button value="Add" onclick="{
   let myX = document.getElementById('myIn01').value
   let myY = document.getElementById('myIn02').value
   let myZ = document.getElementById('myIn03').value
-  let myTotal = myX + myY + myZ
+  let myQ = document.getElementById('myIn04').value
+  let myTotal = myX + myY + myZ + myQ
   document.getElementById('myDiv01').innerHTML = 'Your answer is ' + myTotal }"><br><br>
