@@ -26,21 +26,14 @@
 Input:<input type=text id="myText1" value="Fred"> 
 Input:<input type=number id="myNum1" value="13"> 
   <div id="myDiv01">...</div> 
-<input type=button value="Is Fred" onclick="{
-  let myIn1 = myFun('myText1').value 
-  myFun('myDiv01').innerHTML = '<br>'
-  if (myIn1 == 'fred'){
-    myFun('myDiv01').innerHTML = 'Hi Fred'
-  }
-}"><br> 
 
-<input type=button value="Is not Fred" onclick="{ 
+<input type=button value="Click me :)" onclick="{ 
   let myIn1 = myFun('myText1').value
   myFun('myDiv01').innerHTML = '<br>'
   if (myIn1 == 'Fred'){ 
     myFun('myDiv01').innerHTML = 'Hi Fred'
   }  else { 
-    myFun('myDiv01').innerHTML = 'Was expecting Fred ):' 
+    myFun('myDiv01').innerHTML = 'I was expecting Fred ):' 
   }
 }"><br> 
 
