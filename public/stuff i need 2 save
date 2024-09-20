@@ -1,2 +1,26 @@
 <input type=button value="Add and fix" onclick="{ myTotal = document.getElementById('myIn01') .value = document.getElementById('myIn02) .value document.getElementById (myDiv01') .innerHTML = 'Your answer is ' + myTotal}"> 
 <div id="myDiv01">...</div>
+
+<html> 
+<head>
+<style>
+  body { 
+    background-colour: yellow; 
+  } 
+  h1 { 
+    color:green;
+    text-align:center; 
+  }
+  p { 
+    font-family:fantasy;
+      font-size:20px;
+  }
+  </style> 
+</head>
+  <body> 
+    <h1> t1a05-css-ava </h1>
+<p> </p><a href=https://www.w3schools.com>w3schools<a/> 
+<p> this is <b> bold </b> </p>
+<b style=color:pink; </b> hiiiiii
+<b style=background-color:#7625BE; </b>
+<i style= "border-style: groove; border-width:10px;border-color:pink;"> yes woo text box 
