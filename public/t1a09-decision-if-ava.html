@@ -37,6 +37,15 @@ Input:<input type=number id="myNum1" value="13">
   }
 }"><br> 
 
+<input type=button value="No click me ^_^" onclick="{ 
+  let myIn1 = myFun('myNum1').value
+  myFun('myDiv01').innerHTML = '<br>'
+  if (myIn1 == '13'){ 
+    myFun('myDiv01').innerHTML = 'YAYY'
+  }  else { 
+    myFun('myDiv01').innerHTML = 'ew :(' 
+  }
+}"><br> 
 
 
 
