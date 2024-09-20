@@ -23,9 +23,9 @@
   }
 </script>
 
-Input:<input type=text id="myText1" value="Fred"> 
-Input:<input type=number id="myNum1" value="183"> 
-Input:<input type=text id="myText2" value="hi"> 
+Name:<input type=text id="myText1" value="Fred"> 
+Number:<input type=number id="myNum1" value="183"> 
+Say hi:<input type=text id="myText2" value="hi"> 
   <div id="myDiv01">...</div> 
 
 <input type=button value="Click me :)" onclick="{ 
@@ -51,7 +51,7 @@ Input:<input type=text id="myText2" value="hi">
 <input type=button value="pick me, choose me :)" onclick="{ 
   let myIn1 = myFun('myText2').value
   myFun('myDiv01').innerHTML = '<br>'
-  if (myIn1 == 'hi' or 'hello'){ 
+  if (myIn1 == 'hi' ){ 
     myFun('myDiv01').innerHTML = 'HIII :)'
   }  else { 
     myFun('myDiv01').innerHTML = 'go away :(' 
