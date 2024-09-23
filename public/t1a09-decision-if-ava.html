@@ -58,9 +58,9 @@ Say hi:<input type=text id="myText2" value="hi">
   }
 }"><br> 
   
- Fav colour:<input type=text id="myText3" value="Purple"> 
-age:<input type=number id="myNum2" value="17"> 
+Fav colour:<input type=text id="myText3" value="Purple"> 
 Fav song :<input type=text id="myText4" value="Rhiannon - fleetwood mac"> 
+age:<input type=number id="myNum2" value="17"> 
   <div id="myDiv02">...</div> 
   
 <input type=button value="Are you smart?" onclick="{ 
@@ -72,17 +72,7 @@ Fav song :<input type=text id="myText4" value="Rhiannon - fleetwood mac">
     myFun('myDiv02').innerHTML = 'Gross ):' 
   }
 }"><br> 
-
-<input type=button value="Are you old?" onclick="{ 
-  let myIn1 = myFun('myNum2').value
-  myFun('myDiv02').innerHTML = '<br>'
-  if (myIn1 <22 ){ 
-    myFun('myDiv02').innerHTML = 'Cool cool cool'
-  }  else { 
-    myFun('myDiv02').innerHTML = 'Elderly :(' 
-  }
-}"><br> 
-
+  
 <input type=button value="Are you cool?" onclick="{ 
   let myIn1 = myFun('myText4').value
   myFun('myDiv02').innerHTML = '<br>'
@@ -93,3 +83,12 @@ Fav song :<input type=text id="myText4" value="Rhiannon - fleetwood mac">
   }
 }"><br> 
  
+<input type=button value="Are you old?" onclick="{ 
+  let myIn1 = myFun('myNum2').value
+  myFun('myDiv02').innerHTML = '<br>'
+  if (myIn1 <22 ){ 
+    myFun('myDiv02').innerHTML = 'Cool cool cool'
+  }  else { 
+    myFun('myDiv02').innerHTML = 'Elderly :(' 
+  }
+}"><br> 
