@@ -58,15 +58,38 @@ Say hi:<input type=text id="myText2" value="hi">
   }
 }"><br> 
   
-checkboxes:<br>
-  <input type="checkbox" id="myBox1" value="reading">Reading<br> 
-  <input type="checkbox" id="myBox2" value="sports">Sports<br> 
+ Fav colour:<input type=text id="myText1" value="Purple"> 
+age:<input type=number id="myNum1" value="17"> 
+Fav song :<input type=text id="myText2" value="Rhiannon - fleetwood mac"> 
+  <div id="myDiv02">...</div> 
   
-  <input type=button value="time for me to judge you:)" onclick="{ 
-  let myIn1 = myFun('myBox1').value
-  myFun('myDiv02').innerHTML = '<br>'
-  if (myIn1 == 'myBox1'){ 
-    myFun('myDiv02').innerHTML = 'Smart'
-  } if (myIn1 == 'myBox2' { 
-    myFun('myDiv02').innerHTML = 'ok you do you ig' 
+<input type=button value=" hi :)" onclick="{ 
+  let myIn1 = myFun('myText1').value
+  myFun('myDiv01').innerHTML = '<br>'
+  if (myIn1 == 'Purple'){ 
+    myFun('myDiv01').innerHTML = 'Good choice'
+  }  else { 
+    myFun('myDiv01').innerHTML = 'gross ):' 
+  }
+}"><br> 
+
+<input type=button value="yeah" onclick="{ 
+  let myIn1 = myFun('myNum1').value
+  myFun('myDiv01').innerHTML = '<br>'
+  if (myIn1 <22 ){ 
+    myFun('myDiv01').innerHTML = 'cool cool cool'
+  }  else { 
+    myFun('myDiv01').innerHTML = 'elderly :(' 
+  }
+}"><br> 
+
+<input type=button value="ooooo" onclick="{ 
+  let myIn1 = myFun('myText2').value
+  myFun('myDiv01').innerHTML = '<br>'
+  if (myIn1 == 'hi' ){ 
+    myFun('myDiv01').innerHTML = 'smart choice:)'
+  }  else { 
+    myFun('myDiv01').innerHTML = 'my favorite song is all that matters :(' 
+  }
+}"><br> 
  
