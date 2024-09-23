@@ -58,38 +58,38 @@ Say hi:<input type=text id="myText2" value="hi">
   }
 }"><br> 
   
- Fav colour:<input type=text id="myText1" value="Purple"> 
-age:<input type=number id="myNum1" value="17"> 
-Fav song :<input type=text id="myText2" value="Rhiannon - fleetwood mac"> 
+ Fav colour:<input type=text id="myText3" value="Purple"> 
+age:<input type=number id="myNum2" value="17"> 
+Fav song :<input type=text id="myText4" value="Rhiannon - fleetwood mac"> 
   <div id="myDiv02">...</div> 
   
-<input type=button value=" hi :)" onclick="{ 
-  let myIn1 = myFun('myText1').value
-  myFun('myDiv01').innerHTML = '<br>'
+<input type=button value="Are you smart?" onclick="{ 
+  let myIn1 = myFun('myText3').value
+  myFun('myDiv02').innerHTML = '<br>'
   if (myIn1 == 'Purple'){ 
-    myFun('myDiv01').innerHTML = 'Good choice'
+    myFun('myDiv02').innerHTML = 'Good choice'
   }  else { 
-    myFun('myDiv01').innerHTML = 'gross ):' 
+    myFun('myDiv02').innerHTML = 'Gross ):' 
   }
 }"><br> 
 
-<input type=button value="yeah" onclick="{ 
-  let myIn1 = myFun('myNum1').value
-  myFun('myDiv01').innerHTML = '<br>'
+<input type=button value="Are you old?" onclick="{ 
+  let myIn1 = myFun('myNum2').value
+  myFun('myDiv02').innerHTML = '<br>'
   if (myIn1 <22 ){ 
-    myFun('myDiv01').innerHTML = 'cool cool cool'
+    myFun('myDiv02').innerHTML = 'Cool cool cool'
   }  else { 
-    myFun('myDiv01').innerHTML = 'elderly :(' 
+    myFun('myDiv02').innerHTML = 'Elderly :(' 
   }
 }"><br> 
 
-<input type=button value="ooooo" onclick="{ 
-  let myIn1 = myFun('myText2').value
-  myFun('myDiv01').innerHTML = '<br>'
+<input type=button value="Are you cool?" onclick="{ 
+  let myIn1 = myFun('myText4').value
+  myFun('myDiv02').innerHTML = '<br>'
   if (myIn1 == 'hi' ){ 
-    myFun('myDiv01').innerHTML = 'smart choice:)'
+    myFun('myDiv02').innerHTML = 'Smart choice:)'
   }  else { 
-    myFun('myDiv01').innerHTML = 'my favorite song is all that matters :(' 
+    myFun('myDiv02').innerHTML = 'My favorite song is all that matters :(' 
   }
 }"><br> 
  
