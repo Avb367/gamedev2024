@@ -59,5 +59,15 @@ Say hi:<input type=text id="myText2" value="hi">
 }"><br> 
   
 checkboxes:<br>
-  <input type="checkbox" value="reading">Reading<br> 
-  <input type="checkbox" value="sports">Sports<br> 
+  <input type="checkbox" id="myBox1" value="reading">Reading<br> 
+  <input type="checkbox" id="myBox2" value="sports">Sports<br> 
+  
+  <input type=button value="hi" onclick="{ 
+  let myIn1 = myFun('myBox1').value
+  myFun('myDiv01').innerHTML = '<br>'
+  if (myIn1 == 'Reading'){ 
+    myFun('myDiv01').innerHTML = 'Smart'
+  }  else { 
+    myFun('myDiv01').innerHTML = 'ok you do you ig' 
+  }
+}"><br> 
