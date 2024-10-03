@@ -84,3 +84,19 @@ Input:<input type=text id="myFirstName" value="fred"><br>
 }"><br> 
 
 <div id="myDiv01">...</div> 
+
+
+<h4> example working code </h4>
+Nothing: <input type=text id="myText01" value="useless rn"><br> 
+
+button:<input type=button value="Example Object Set and Show" onClick="{
+ let myPerson = {
+  'firstName': 'John',
+  'lastName': 'Doe',
+  'age': '50',
+  'eyeColor': 'blue'
+  }
+ document.getElementById(myDiv01).innerHTML = '<br>myPerson Object has properties: <br>'
+  document.getElementById(myDiv01).innerHTML += 'firstName: ' + myPerson.firstName + '<br>'
+  document.getElementById(myDiv01).innerHTML += 'lastName:' + myPerson.lastName + '<br>'
+
