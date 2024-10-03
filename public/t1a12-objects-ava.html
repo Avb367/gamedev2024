@@ -1,6 +1,12 @@
 <h2 align=center>t1a12-objects-ava</h2>
 <a href=https://www.w3schools.com/js/js_objects.asp>objects w3schools</a><br>
 
+<script>
+  function myFun(myIn) {
+    return document.getElementById(myIn);
+  }
+</script> 
+
 <h4> example working code </h4>
 Nothing: <input type=text id="myText01" value="useless rn"><br> 
 
@@ -11,3 +17,9 @@ Nothing: <input type=text id="myText01" value="useless rn"><br>
   'age': '50',
   'eyeColor': 'blue'
   }
+myFun(myDiv01).innerHTML = '<br>myPerson Object has
+ properties: <br>'
+ myFun(myDiv01).innerHTML += 'firstName: ' +
+ myPerson.firstName + '<br>'
+ myFun(myDiv01).innerHTML += 'lastName:' +
+ myPerson.lastName + '<br>'
