@@ -99,4 +99,3 @@ button:<input type=button value="Example Object Set and Show" onClick="{
  document.getElementById(myDiv01).innerHTML = '<br>myPerson Object has properties: <br>'
   document.getElementById(myDiv01).innerHTML += 'firstName: ' + myPerson.firstName + '<br>'
   document.getElementById(myDiv01).innerHTML += 'lastName:' + myPerson.lastName + '<br>'
-
