@@ -1,16 +1,25 @@
-<h2 align=center>t1a12-objects-ava</h2>
-<a href=https://www.w3schools.com/js/js_objects.asp>objects w3schools</a><br>
+<h2 align="center">t1a12-objects-ava</h2>
+<a href="https://www.w3schools.com/js/js_objects.asp">objects w3schools</a><br>
 
-<h4> example working code </h4>
-Nothing: <input type=text id="myText01" value="useless rn"><br> 
+<h4>Example Working Code</h4>
+Nothing: <input type="text" id="myText01" value="useless rn"><br> 
 
-button:<input type=button value="Example Object Set and Show" onClick="{
- let myPerson = {
-  'firstName': 'John',
-  'lastName': 'Doe',
-  'age': '50',
-  'eyeColor': 'blue'
-  }
- document.getElementById(myDiv01).innerHTML = '<br>myPerson Object has properties: <br>'
-  document.getElementById(myDiv01).innerHTML += 'firstName: ' + myPerson.firstName + '<br>'
-  document.getElementById(myDiv01).innerHTML += 'lastName:' + myPerson.lastName + '<br>'
+<button onclick="showPerson()">Example Object Set and Show</button>
+
+<div id="myDiv01"></div>
+
+<script>
+function showPerson() {
+  let myPerson = {
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 50,
+    eyeColor: 'blue'
+  };
+  document.getElementById('myDiv01').innerHTML = '<br>myPerson Object has properties: <br>';
+  document.getElementById('myDiv01').innerHTML += 'firstName: ' + myPerson.firstName + '<br>';
+  document.getElementById('myDiv01').innerHTML += 'lastName: ' + myPerson.lastName + '<br>';
+  document.getElementById('myDiv01').innerHTML += 'age: ' + myPerson.age + '<br>';
+  document.getElementById('myDiv01').innerHTML += 'eyeColor: ' + myPerson.eyeColor + '<br>';
+}
+</script>
