@@ -25,20 +25,13 @@
 
     <script>
         // URL to fetch JSON data from
-        const url = 'https://api.example.com/data';
+        const url = 'https://dog.ceo/api/breeds/image/random';
 
         // Function to fetch and display JSON data
         async function fetchData() {
             try {
                 console.log('Fetching data from:', url);
-                const response = await fetch(url, {
-                    method: 'GET',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        // Add any other headers if needed
-                    },
-                    mode: 'cors' // Ensure CORS is enabled
-                });
+                const response = await fetch(url);
                 
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
