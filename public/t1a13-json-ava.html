@@ -11,10 +11,7 @@
         const myJson = await JSON.stringify(data, null, 2);
          document.getElementById('myDiv1').innerHTML = myJson
     } 
-    
-</script>
-<script>
-    function myShowJSON(MyIn0){
+        function myShowJSON(MyIn01){
         document.getElementById('myDiv2').innerHTML = `Sent: ${myIn} ` 
     }
     async function fetchData() {
@@ -27,12 +24,10 @@
     } 
     
 </script>
-
 <textarea cols=70 ROWS=5>
 </textarea><br></br> 
 
-URL: <input type=text id="mytext1" value=  
- "https://catfact.ninja/fact"> 
+URL: <input type=text id="mytext1" value= "https://catfact.ninja/fact"> 
 <input type=button value="show JSON" onclick="{fetchData()}"><br><br>
 
 <select size=1 onchange"myShowJSON(this.value)">
